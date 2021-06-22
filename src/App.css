@@ -1,38 +1,416 @@
-.App {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  display: block;
+}
+
+.left {
+  background: red;
+}
+
+.right {
+  background: blue;
+}
+
+div {
+  display: inline-block;
+}
+
+.phonebar {
+  background: #21140F;
+  color: white;
+  padding-top: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.phonebar img {
+  width: 60%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.phonebar p {
+  margin-bottom: -2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.phonebar a {
+  color: #BA7154;
+  display: inline;
+}
+
+.sticky-top {
+  background: #21140F;
+  box-shadow: 3px 3px 3px -3px #000;
+}
+
+.navbar-nav {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar-toggler {
+  text-align: right;
+  position: relative;
+  text-align: right;
+  border-radius: 0px;
+  margin: 0 auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.phonebar {
+  padding-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.dropdown-menu {
+  background: #21140F;
+  border: none;
 }
+
+#dropdownMenuButton1 {
+  background: #21140F;
+  border: none;
+  margin: 0 auto;
+}
+
+.dropdown-item {
+  color: white;
+  background: #21140F;
+  margin: 0 auto;
+}
+
+.blurb {
+  display: block;
+  transition: 0.2s;
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.blurb a {
+  color: #21140F;
+}
+
+.blurb a:hover {
+  text-decoration: underline;
+  text-decoration-color: #BA7154;
+}
+
+.homebio, .footer {
+  text-align: center;
+  padding: 10vw;
+  color: white;
+  background:#21140F;
+}
+
+
+.homebio {
+  background: linear-gradient(0deg, rgba(33, 20, 15, 1), rgba(33, 20, 15, 0.7)),url("https://live.staticflickr.com/1941/44570680144_363cc00eee_k.jpg");
+  background-size: cover;
+}
+
+.homebio div {
+  margin: 30vh auto;
+}
+
+.homebio2 div {
+  margin: 20px auto;
+}
+
+.footer {
+  text-align: left;
+}
+
+.homebio h4 {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.homebio2 {
+  padding: 10vw;
+  background: #BA7154;
+  color: white;
+}
+
+.homebio2 h3 {
+  text-align: center;
+}
+
+.homebio2 h4 {
+  font-size: 1em;
+  line-height: 2.5em;
+}
+
+.homebio2 ul {
+  text-align: center;
+  display: block;
+  margin: 0 auto 0 40px;
+  width: 100%;
+}
+.homebio2 li {
+  color: white;
+  padding: 5px;
+}
+
+.homebio2 li:hover {
+  text-decoration: underline;
+  text-decoration-color: #BA7154;
+}
+
+.hometestimonials {
+  color: white;
+  background: linear-gradient(0deg, rgba(33, 20, 15, 1), rgba(33, 20, 15, 0.8)),url("https://live.staticflickr.com/1941/44570680144_363cc00eee_k.jpg");
+}
+
+.hometestimonials div {
+  margin: 30vh 0;
+  overflow-x: hidden;
+}
+
+.hometestimonials h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.hometestimonials h3 {
+  font-style: italic;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+
+.biospecialize {
+  margin: auto;
+  line-height: 100%;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://airdrielawyer.com/wp-content/uploads/2021/01/Airdrie-Personal-Injury-Lawyer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+}
+
+
+.masthead button,
+.homeblurbs button,
+.consultationform button {
+  background: #21140F;
+  border: none;
+  box-shadow: 2px 2px 5px #000;
+  color: white;
+  margin-top: 30px;
+  padding: 30px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.homeblurbs button,
+.consultationform button {
+  box-shadow: none;
+}
+
+.homeblurbs button {
+  background: #BA7154;
+}
+
+.homeblurbs button:hover {
+  background: rgba(33, 20, 15, 1);
+  color: white;
+}
+
+.homeblurbs p {
+  height: 32vh;
+}
+
+.masthead button:hover {
+  background: #BA7154;
+  transition: 0.2s;
+}
+
+.collapsed {
+  border: none;
+}
+
+#map {
+  width: 100%;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+
+i {
+  color: #21140F;
+  font-size: 3em;
+}
+
+.homeblurbs i {
+  font-size: 4em;
+}
+
+.homeblurbs h4 {
+  margin: 20px auto;
+}
+
+i.fa-phone-alt {
+  color: #BA7154;
+  font-size: initial;
+  margin-top: 5px;
+}
+
+.phonebar h4 {
+  display: inline-block;
+}
+
+.consultationform {
+  background: #BA7154;
+}
+
+.formdiv {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.formdiv h4 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+form {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+form input {
+  display: block;
+  margin: 40px auto;
+}
+
+form textarea {
+  margin-bottom: 40px;
+}
+
+input.form-control {
+  height: 50px;
+}
+
+.footer {
+  padding-bottom: none;
+}
+
+.footer a {
+  color: white;
+  padding: 5px;
+}
+
+.footer p {
+  color: #BA7154;
+  margin-bottom: 0px;
+}
+
+.footer div {
+  margin: 20px auto 0 auto;
+}
+
+.footercopyright {
+  font-size: smaller;
+  text-align: center;
+}
+
+.footeraddress {
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.footer i {
+  color: white;
+  text-align: right;
+  display: block;
+  margin: 0 auto;
+  font-size: 3em;
+}
+
+.footer i:hover {
+  color: #BA7154;
+  transition: 0.2s;
+}
+
+
+.subpage .content p {
+  padding: 3vw 10vw;
+}
+
+.jumbotron {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://brainbrighttherapy.com/wp-content/uploads/2017/10/Toledo-OH-Skyline.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+ 
+  .hide{
+    display: none;
+  }
+
+  .masthead button {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .homeblurbs button,
+  .consultationform button {
+    width: 100%;
+  }
+
+  .homeblurbs p {
+    height: initial;
+  }
+
+  .homebio2 li {
+    text-align: left;
+    margin: 10px auto;
+  }
+
+  .consultation {
+    margin-top: 20px;
+  }
+
+  .footer a,
+  .footer p,
+  .footer div,
+  .footer i {
+    text-align: center;
+  }
+
+} 
+
+@media screen and (max-width: 768px) {
+
+} 
+
